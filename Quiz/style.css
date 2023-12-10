@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+   
+}
+
+.container .question{
+    border-radius: 10px;
+    border: 2px black solid;
+    height: 80px;
+    margin: 10px 0;
+    box-shadow:  5px 5px 5px gray;
+    font-size: x-large;
+    text-align: center;
+    justify-content: center;
+}
+
+.container button{
+    height: 40px;
+    border-radius: 5px;
+    border: 2px black solid;
+    
+
+}
+
+.container #explanation{
+    text-align: center;
+    margin-top: 10px;
+}
+.hidden{
+    display: none;
+}

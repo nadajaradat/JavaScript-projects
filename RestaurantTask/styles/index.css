@@ -1,0 +1,201 @@
+body {
+    background-color: #ffffff;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Serif', serif;
+  }
+  
+  .container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+
+  }
+
+  /*sec-1 style*/
+  .sec-1{
+    background-image: url('../images/restaurantBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    color: #f0f0f0;
+  }
+  
+  .sec-1 header {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Stick it to the top of the viewport */
+    width: 100%; /* Make it full-width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*background-color: blueviolet;*/
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 100; /* Set a higher z-index to ensure it's above other content */
+  }
+  
+  .sec-1 nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    margin-left: 50px;
+    padding: 5px;
+    height: 15vh;
+  }
+
+  .sec-1 nav .logo:hover{
+    cursor: pointer;
+  }
+  
+  .sec-1 nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 15vh;
+    align-items: center;
+    margin-top: -35px !important;
+  }
+  
+  .sec-1 nav ul li {
+    display: flex;
+    height: 15vh;
+    align-items: center;
+  }
+  
+  .sec-1 nav ul li a {
+    text-transform: none;
+    text-decoration: none;
+    color: aliceblue;
+    align-items: center;
+    padding-top: 6vh;
+  }
+  
+  .sec-1 nav ul li a:hover {
+    color: #E2785D;
+  }
+
+  .sec-1 main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: blue;*/
+  }
+  
+  .sec-1 main div button,
+  .viewFullMenu{
+    padding: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+  }
+
+  .sec-1 main  button:hover{
+    cursor: pointer;
+  }
+  .viewFullMenu:hover{
+    cursor: pointer;
+  }
+
+  .sec-1 main  #learnMore:hover{
+   
+    background-color: #f0f0f0 !important;
+    color: black!important;
+
+    transition: ease-in-out 1s;
+  }
+
+  .sec-1 main  #bookAVisit:hover{
+   opacity: .9;
+  }
+
+  /*.sec-2 style*/
+  
+  .sec-2{
+    font-size: 17px;
+    margin-top: 100px;
+    align-items: center;
+    line-height: 2;
+  }
+
+  .sec-2 div{
+    margin-right: 40px;
+  }
+  
+  .sec-2 ul li{
+    display: flex;
+  }
+
+  /*sec-3 style*/
+
+  .sec-3{
+    background-color: #f8f8f8;
+    
+  }
+
+  .sec-3 div{
+    margin-left: 30px;
+  }
+/*sec-4 style*/
+.sec-4 {
+    height: 85vh;
+    background-image: url('../images/shutterstock_280369721.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Set background image to scroll with content */
+}
+
+.sec-5{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin-bottom: 40px;
+}
+
+.sec-5 .item {
+    margin: 20px;
+    width: 350px;
+    text-align: center;
+}
+.sec-5 .item span,
+.sec-5 .item p {
+    padding: 10px 0; /* Adjust the padding as needed */
+}
+
+
+
+
+
+
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+    height: auto;
+}
+
+.outer header{
+    
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer .viewFullMenu{
+    
+    margin-bottom: 100px;
+}

@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #999b99;
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+   
+}
+
+.container .step{
+    border-radius: 50%;
+    border: 3px solid #e0e0e0;
+    padding: 5px;
+    width: 15px;
+    text-align: center;
+}
+
+.container .line{
+    width: 60px;
+    height: 0px;
+    border: 2px solid #e0e0e0;
+    background-color: #e0e0e0;
+}
+
+.buttons {
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.buttons button {
+    padding: 10px 30px ;
+    background-color: #3498db;
+    border-radius: 10px;
+    border:0;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+
+.active{
+    border-color: #3498db !important;
+    transition: all 1.5s;
+}
+/* Add these styles to your CSS */
+#btn1[disabled] {
+    background-color: #e0e0e0 !important;
+    transition: all 1.5s;
+}
+
+#btn2[disabled] {
+    background-color: #e0e0e0 !important;
+    transition: all 0.5s;
+}
+
+

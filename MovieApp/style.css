@@ -1,0 +1,123 @@
+:root{
+    --nav-color :#373b69;
+    --main-color:#22254b;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: wheat;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    background-color:var(--main-color);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:10px;
+    background-color: var(--main-color);
+    flex-wrap: wrap;
+    
+    color: wheat;
+}
+
+nav{
+    background-color: var(--nav-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 80px;
+    padding-right: 30px;
+    
+}
+
+.container .card{
+
+    width:300px;
+    height: 100vh;
+    border: black 1px solid;
+    margin: 10px 5px;
+    border: 0;
+    border-radius: 5px;
+
+    background-color: var(--nav-color);
+    
+}
+
+.container .card .pic{
+    
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius:  5px 5px 0 0;
+    z-index: 0;
+}
+
+.container .card .card-body{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:  0 10px;
+
+}
+
+.container .card .card-body .vote_average{
+    border-radius: 5px;
+    background-color: var(--main-color);
+    padding: 5px;
+}
+
+.container .card .overview {
+    background-color: #fff;
+    padding: 2rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(0%); /* Initial position */
+    overflow-y: auto;
+    transition: transform .3s ease-in; /* Transition for transform property */
+    display: none;
+    color: black;
+}
+
+.card:hover .overview {
+    display: block;
+    transform: translateY(-100%); /* Hover state position */
+    transition: transform .3s ease-in; /* Transition for transform property */
+}
+
+
+
+nav .search{
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+
+    padding: 10px;
+    font-size: 20px;
+
+    color: wheat;
+}
+
+nav .search:hover{
+    background-color: var(--main-color);
+}
+
+nav .search:focus{
+    outline: none;
+}
+
+nav .search::placeholder {
+    color: #7378c5;
+  }

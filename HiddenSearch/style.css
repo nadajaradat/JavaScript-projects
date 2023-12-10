@@ -1,0 +1,47 @@
+body{
+    margin:00;
+    padding: 0;
+
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #7359e7;
+}
+
+.container .search{
+    background-color: aliceblue;
+    padding: 10px;
+    transition: ease-in-out 2s;
+}
+
+.container .search .searchInput {
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    transition:  0.3s ease;
+    
+}
+
+.container .search .searchInput:focus{
+    outline: none;
+}
+.container .search .btn {
+    background: transparent;
+    color: black;
+    border: 0;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
